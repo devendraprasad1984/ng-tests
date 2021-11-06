@@ -17,8 +17,8 @@ export class AppComponent {
         {name: 'user 4', phone: '92839283'},
         {name: 'user 5', phone: '92839283'}
     ]
+
     getValue() {
         return 'get function data'
     }
-
 }
