@@ -1,0 +1,20 @@
+<h1>hello angular first learning by DP</h1>
+<h2>app name: {{title}}</h2>
+<h3>{{msg}}</h3>
+<div>{{getValue()}}</div>
+
+<app-calculate></app-calculate>
+<ul *ngFor="let user of userList">
+    <app-user-list
+            [user]="user">
+    </app-user-list>
+</ul>
+
+
+<app-todo-list
+        [numberValue]="numberValue"
+></app-todo-list>
+
+<app-post-list></app-post-list>
+
+<app-sign-in></app-sign-in>

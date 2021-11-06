@@ -1,0 +1,10 @@
+<button (click)="changeColor()">change color</button>
+<span>
+{{user.name}} - {{user.phone}}
+<b
+    *ngFor="let ids of user.socialIds"
+    [style.backgroundColor]="'red'"
+    [style.color]="socialIdsColor">
+{{ids}}
+</b>
+</span>
