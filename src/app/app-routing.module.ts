@@ -6,6 +6,10 @@ import {TodoListComponent} from "./todo-list/todo-list.component";
 import {CalculateComponent} from "./calculate/calculate.component";
 import {HomeComponent} from "./home/home.component";
 import {PostListComponent} from "./post-list/post-list.component";
+import {NoPageComponent} from "./no-page/no-page.component";
+import {AboutComponent} from "./about/about.component";
+import {AboutCompanyComponent} from "./about-company/about-company.component";
+import {AboutMeComponent} from "./about-me/about-me.component";
 
 const routes: Routes = [
   {path:'home', component: HomeComponent},
@@ -13,7 +17,12 @@ const routes: Routes = [
   {path:'signup', component: SignUpComponent},
   {path:'todo', component: TodoListComponent},
   {path:'calculate', component: CalculateComponent},
-  {path:'posts', component: PostListComponent}
+  {path:'posts', component: PostListComponent},
+  {path:'about', component: AboutComponent, children:[
+      {path: 'company', component: AboutCompanyComponent},
+      {path: 'me', component: AboutMeComponent}
+    ]},
+  {path:'**', component: NoPageComponent}
 ];
 
 @NgModule({

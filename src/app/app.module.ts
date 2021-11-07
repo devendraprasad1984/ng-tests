@@ -13,6 +13,10 @@ import {CalculateComponent} from './calculate/calculate.component';
 import {HttpClientModule} from '@angular/common/http';
 import {PostListComponent} from './post-list/post-list.component';
 import { HomeComponent } from './home/home.component';
+import { NoPageComponent } from './no-page/no-page.component';
+import { AboutComponent } from './about/about.component';
+import { AboutCompanyComponent } from './about-company/about-company.component';
+import { AboutMeComponent } from './about-me/about-me.component';
 
 @NgModule({
     declarations: [
@@ -23,7 +27,11 @@ import { HomeComponent } from './home/home.component';
         TodoListComponent,
         CalculateComponent,
         PostListComponent,
-        HomeComponent
+        HomeComponent,
+        NoPageComponent,
+        AboutComponent,
+        AboutCompanyComponent,
+        AboutMeComponent
     ],
     imports: [
         BrowserModule,

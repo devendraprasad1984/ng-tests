@@ -1,4 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
+import {ActivatedRoute} from "@angular/router";
 
 const todoListForm = `
     <h2>todo list form</h2>
@@ -36,13 +37,14 @@ export class TodoListComponent implements OnInit {
     todoTaskList: any[] = []
     @Input() numberValue: number = 0
 
-    constructor() {
+    constructor(private route: ActivatedRoute) {
     }
 
     ngOnInit(): void {
     }
 
     addTask(task: string) {
+        // console.log('dynamic rounting example', this.route.snapshot.paramMap.get('id'))
         this.todoTaskList.push({id: this.todoTaskList.length, value: task})
         console.log(this.todoTaskList)
     }
