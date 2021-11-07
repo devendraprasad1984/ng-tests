@@ -12,6 +12,7 @@ import {UserAuthModule} from "./user-auth/user-auth.module";
 import {CalculateComponent} from './calculate/calculate.component';
 import {HttpClientModule} from '@angular/common/http';
 import {PostListComponent} from './post-list/post-list.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
     declarations: [
@@ -22,6 +23,7 @@ import {PostListComponent} from './post-list/post-list.component';
         TodoListComponent,
         CalculateComponent,
         PostListComponent,
+        HomeComponent
     ],
     imports: [
         BrowserModule,

@@ -1,21 +1,22 @@
 <h1>hello angular first learning by DP</h1>
-<h2>app name: {{title}}</h2>
-<h3>{{msg}}</h3>
-<div>{{getValue()}}</div>
+<h2 style="padding: 2px; display: flex; flex: 1; justify-content: space-between; flex-direction: row; ">
+    routes
+    <a routerLink="home">Home</a>
+    <a routerLink="todo">Todo</a>
+    <a routerLink="signin">signin</a>
+    <a routerLink="signup">signup</a>
+    <a routerLink="calculate">calculate</a>
+    <a routerLink="posts">posts</a>
+</h2>
 
-<app-calculate></app-calculate>
-<ul *ngFor="let user of userList">
-    <app-user-list
-            [user]="user">
-    </app-user-list>
-</ul>
+<router-outlet></router-outlet>
 
+<!--<h2>app name: {{title}}</h2>-->
+<!--<h3>{{msg}}</h3>-->
+<!--<div>{{getValue()}}</div>-->
 
-<app-todo-list
-        [numberValue]="numberValue"
-></app-todo-list>
+<!--<app-calculate></app-calculate>-->
 
-<app-post-list></app-post-list>
-
-<app-sign-in></app-sign-in>
-<app-sign-up></app-sign-up>
+<!--<app-todo-list-->
+<!--        [numberValue]="numberValue"-->
+<!--&gt;</app-todo-list>-->
