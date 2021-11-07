@@ -1,6 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
-a{
+a {
     cursor: pointer;
     color: rebeccapurple;
     text-decoration: underline;
+}
+
+.row {
+    padding: 2px;
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    flex-direction: row;
 }

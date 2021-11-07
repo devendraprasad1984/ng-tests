@@ -10,6 +10,7 @@ import {NoPageComponent} from "./no-page/no-page.component";
 import {AboutComponent} from "./about/about.component";
 import {AboutCompanyComponent} from "./about-company/about-company.component";
 import {AboutMeComponent} from "./about-me/about-me.component";
+import {AdminRoutingModule} from "./admin/admin-routing.module";
 
 const routes: Routes = [
   {path:'home', component: HomeComponent},
@@ -26,7 +27,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes), AdminRoutingModule],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

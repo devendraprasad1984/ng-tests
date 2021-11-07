@@ -17,6 +17,7 @@ import { NoPageComponent } from './no-page/no-page.component';
 import { AboutComponent } from './about/about.component';
 import { AboutCompanyComponent } from './about-company/about-company.component';
 import { AboutMeComponent } from './about-me/about-me.component';
+import {AdminModule} from "./admin/admin.module";
 
 @NgModule({
     declarations: [
@@ -40,6 +41,7 @@ import { AboutMeComponent } from './about-me/about-me.component';
         AppRoutingModule,
         UserAuthModule,
         HttpClientModule,
+        AdminModule
     ],
     providers: [],
     bootstrap: [AppComponent]
