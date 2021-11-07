@@ -11,7 +11,7 @@ import {TodoListComponent} from './todo-list/todo-list.component';
 import {UserAuthModule} from "./user-auth/user-auth.module";
 import {CalculateComponent} from './calculate/calculate.component';
 import {HttpClientModule} from '@angular/common/http';
-import {PostListComponent} from './post-list/post-list.component'
+import {PostListComponent} from './post-list/post-list.component';
 
 @NgModule({
     declarations: [
@@ -21,7 +21,7 @@ import {PostListComponent} from './post-list/post-list.component'
         UserListComponent,
         TodoListComponent,
         CalculateComponent,
-        PostListComponent
+        PostListComponent,
     ],
     imports: [
         BrowserModule,

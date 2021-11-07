@@ -9,8 +9,8 @@ import {FormControl, FormGroup, Validators} from "@angular/forms";
 export class SignInComponent implements OnInit {
     //reactive form example
     signInControl = new FormGroup({
-        username: new FormControl('', [Validators.required]),
-        password: new FormControl('', [Validators.required])
+        username: new FormControl('', [Validators.required, Validators.email, Validators.pattern('[a-zA-Z0-9]+$')]),
+        password: new FormControl('', [Validators.required, Validators.minLength(8), Validators.pattern('[a-zA-Z0-9]+$')])
     })
 
     constructor() {

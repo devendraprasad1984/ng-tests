@@ -1,7 +1,7 @@
-<h1>sign in component in main App root component</h1>
+<h1 appCustomColor>sign in component in main App root component</h1>
 <!--this is an example of React Forms-->
 <form (ngSubmit)="handleUserLogin()" [formGroup]="signInControl">
-    <input formControlName="username" name="username" placeholder="enter user name" type="text"/>
+    <input appCustomColor formControlName="username" name="username" placeholder="enter user name" type="text"/>
     <br>
     <span *ngIf="validateUser && validateUser.touched && validateUser.invalid">this field is invalid</span>
     <br><br>
@@ -9,6 +9,6 @@
     <br>
     <span *ngIf="validatePassword && validatePassword.touched && validatePassword.invalid">this field is invalid</span>
     <br><br>
-    <button>click to console</button>
+    <button [disabled]="signInControl.invalid">click to console</button>
 </form>
-<button (click)="handleUserLogin()">click to console - outside form</button>
+<button (click)="handleUserLogin()" [disabled]="signInControl.invalid">click to console - outside form</button>
